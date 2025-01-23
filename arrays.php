@@ -27,7 +27,7 @@
 
         // Ejercicio 3
         echo "<br><b>Ejercicio 3 </b><br>";
-        $persona1["Edad"] = 24; // Corregido la clave para cambiar la edad
+        $persona1["Edad"] = 24; 
         $counter = 1;
         foreach ($persona1 as $value) {
             echo "dato " . $counter . "º: " . $value . "<br>";
@@ -37,14 +37,14 @@
         // Ejercicio 4
         echo "<br><b>Ejercicio 4 </b><br>";
 
-        unset($persona1["Ciudad"]); // Corregido la clave "ciudad" a "Ciudad"
-        var_dump($persona1); // Corregido la sintaxis del var_dump
+        unset($persona1["Ciudad"]);
+        var_dump($persona1);
 
         // Ejercicio 5
         echo "<br><br><b>Ejercicio 5 </b><br>";
 
         $letters = "a,b,c,d,e,f";
-        $lettersAr = explode(",", $letters); // Corregido la sintaxis de explode
+        $lettersAr = explode(",", $letters);
         $counter = 1;
 
         foreach ($lettersAr as $value) {
@@ -56,8 +56,8 @@
         echo "<b><br><br>Ejercicio 6 </b>";
 
         echo "<br>Notas de los estudiantes ";
-        $students = "Marca, Isabel, Luis, Miguel, Aitor, Pepe"; // Renombrado para no confundir con el array de notas
-        $studentsAr = explode(",", $students); // Corregido la variable para el array de nombres
+        $students = "Marca, Isabel, Luis, Miguel, Aitor, Pepe";
+        $studentsAr = explode(",", $students); 
         $counter = 10;
         foreach ($studentsAr as $value) {
             echo $counter . ": " . $value . " ";
@@ -67,8 +67,7 @@
         // Ejercicio 7
         echo "<b><br><br>Ejercicio 7 </b><br>";
         
-        // Aquí tienes que definir el array $estudiantes con las notas de los alumnos.
-        $estudiantes = array("Marca" => 8, "Isabel" => 5, "Luis" => 6, "Miguel" => 7, "Aitor" => 9, "Pepe" => 4); // Ejemplo de notas
+        $estudiantes = array("Marca" => 8, "Isabel" => 5, "Luis" => 6, "Miguel" => 7, "Aitor" => 9, "Pepe" => 4);
         $media = 0;
 
         foreach ($estudiantes as $nota) {
