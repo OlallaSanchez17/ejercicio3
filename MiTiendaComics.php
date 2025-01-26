@@ -70,7 +70,7 @@
 
         foreach ($inventario['accion'] as &$comic) {
             if ($comic['idioma'] == 'Japonés') {
-                $comic['precio'] = round($comic['precio'] * 0.7, 2); // Aplicar descuento del 30%
+                $comic['precio'] = round($comic['precio'] * 0.7, 2); 
             }
         }
     }
